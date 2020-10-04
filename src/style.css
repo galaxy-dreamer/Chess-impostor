@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+}
+.chessBoard {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(8, 85px);
+  grid-template-rows: repeat(8, 85px);
+}
+
+[data-color="1"] {
+  background-color: white;
+  width: 85px;
+  height: 85px;
+}
+[data-color="0"] {
+  background-color: #ff9966;
+  width: 85px;
+  height: 85px;
+}
+[data-landOfPlayer="1"] {
+  font-size: 15px;
+  color: black;
+}
+[data-landOfPlayer="2"] {
+  font-size: 15px;
+  color: brown;
+}
+.gossip {
+  background: url("photoforchess/rm21-smoke-bb-5_1.jpg") no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 240px auto 240px;
+}
+[data-restart] {
+  margin: 50px 50px 50px 50px;
+  background-color: yellowgreen;
+  font-size: large;
+}
+[data-SeeRedImposter],
+[data-ShowRedImposter] {
+  margin: 50px 50px 50px 50px;
+  background-color: skyblue;
+  font-size: large;
+}
+[data-SeeBlueImposter],
+[data-ShowBlueImposter] {
+  margin: 50px 50px 50px 50px;
+  background-color: salmon;
+  font-size: large;
+}
+.imgHover {
+  width: 160px;
+  height: 160px;
+  justify-content: center;
+}
+[data-NameOfGame] {
+  width: 360px;
+  height: 180px;
+}
+[data-winner] {
+  font-size: large;
+  color: red;
+}
